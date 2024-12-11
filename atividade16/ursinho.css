@@ -1,0 +1,9 @@
+body{
+    background-image: url(cenario.png);
+}
+#urso{
+    width: 90px;
+    position: fixed;
+    bottom: 260px;
+    left: 30px;
+}

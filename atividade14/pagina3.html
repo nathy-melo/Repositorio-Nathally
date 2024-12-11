@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 3</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function trocaLampada(){
+            let imagem = document.getElementById("lampada");
+            if(imagem.src.match("lampada_apagada.jpg") ){
+                imagem.src = "lampada_acesa.jpg";
+            }
+            else{
+                imagem.src = "lampada_apagada.jpg";
+            }
+        }
+    </script>
+    <p><img id="lampada" onmouseover="trocaLampada()" src="lampada_apagada.jpg" width=140 height=180></p>
+    <p>Clique na lâmpada para acender/apagar a luz</p>
+</body>
+</html>
